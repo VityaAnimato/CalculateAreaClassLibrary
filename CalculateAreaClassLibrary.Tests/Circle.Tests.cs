@@ -3,7 +3,7 @@ namespace CalculateAreaClassLibrary.Tests
     [TestClass]
     public class CircleTests
     {
-        private readonly double eps = CalculateAreaClassLibrary.Constants.CalcAccuracy;
+        private readonly double eps = Constants.CalcAccuracy;
 
         [TestMethod]
         public void GetSquare_CircleRadius_1_Returns_Pi()
@@ -31,7 +31,7 @@ namespace CalculateAreaClassLibrary.Tests
 		[TestMethod]
 		public void LessMinRadiusTest()
 		{
-			Assert.ThrowsException<ArgumentException>(() => new Circle(Circle.MinRadius - 1e7));
+			Assert.ThrowsException<ArgumentException>(() => new Circle(Circle.MinRadius - eps));
 		}
 
 
