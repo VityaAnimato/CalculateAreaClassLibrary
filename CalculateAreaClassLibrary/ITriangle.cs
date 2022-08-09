@@ -6,7 +6,5 @@ namespace CalculateAreaClassLibrary
 		double SideA { get; }
 		double SideB { get; }
 		double SideC { get; }
-
-		bool IsRightTriangle { get; }
 	}
 }
